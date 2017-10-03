@@ -1,0 +1,163 @@
+<!DOCTYPE html5>
+<html>
+<head>
+<style>
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	background-image:url(paas.jpg);
+	background-width:100%;
+	background-height:100%;
+}
+.button {
+    width:44mm;
+    background-color: #4CAF50; /* Green */
+    border-radius:4px;
+    color: white;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight:bold;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1 {
+    background-color: white;
+    color: #4616ad;
+    border: 6px solid transparent;
+    box-shadow: 7px 3px 5px #888888;
+}
+
+.button1:hover {
+    background-color: #4616ad;
+    color: white;
+    border: 2px solid #4616ad;
+    box-shadow: 7px 3px 5px #888888;
+}
+.button2 {
+    background-color: white;
+    color: #4616ad;
+    border: 6px solid transparent;
+    box-shadow: 7px 3px 5px #888888;
+}
+
+.button2:hover {
+    background-color: #4616ad;
+    color: white;
+    border: 2px solid #4616ad;
+    box-shadow: 7px 3px 5px #888888;
+}
+.button3 {
+    background-color: white;
+    color: #4616ad;
+    border: 6px solid transparent;
+    box-shadow: 7px 3px 5px #888888;
+}
+
+.button3:hover {
+    background-color: #4616ad;
+    color: white;
+    border: 2px solid #4616ad;
+    box-shadow: 7px 3px 5px #888888;
+}
+.button4 {
+    background-color: white;
+    color: #4616ad;
+    border: 6px solid transparent;
+    box-shadow: 7px 3px 5px #888888;
+}
+
+.button4:hover {
+    background-color: #4616ad;
+    color: white;
+    border: 2px solid #4616ad;
+    box-shadow: 7px 3px 5px #888888;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    font-size:18px;
+    color:#4616ad;
+    min-width: 300px;
+    box-shadow: 10px 5px 8px #4616ad;
+    padding: 10px 0px 8px 0px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropdown-content1 {
+    display: block;}
+
+
+</style>
+<link rel="stylesheet" href="styles1.css">
+			<title>Cloud|PAAS</title>
+			<link rel="icon" type="image/png" href="iaas.png">
+</head>
+<body>
+<div style='font-weight:bold; font-size:29px; padding-bottom:1cm; text-align:center; padding-top:1cm; color:white; background-color:#4616ad;'>
+  PLATFORM AS A SERVICE
+</div>
+</br>
+</br>
+<div style='background-color:transparent;  color:white; margin-left:13cm; margin-right:15cm; font-weight:bold; width:28%;'>
+	<p style='font-size:28px; font-weight:bold; box-shadow: 5px 2px 5px #888888; border:4px solid #4616ad;  color:#4616ad; text-align:center;'>CHOOSE PLATFORM</p>
+	<form action='/cgi-bin/paas/paas.py' method='POST'></br>
+	<center>
+  	<img border="0" src="python.png" width="132" height="132"></br>
+<div class="dropdown">
+        <span>
+	<button class="button button1" name="s" value="python">PYTHON</button></br>
+	 </span>
+        <div class="dropdown-content"><p>user:'redhat' | pass:'redhat'</p></div>
+</div>
+</br>
+	</br>
+  	<img border="0" src="mysql.png" width="132" height="132"></br>
+<div class="dropdown">
+        <span>
+	<button class="button button2" name="s" value="mysql">MYSQL</button></br>
+	       </span>
+        <div class="dropdown-content"><p>user:'db' | pass:'db'</p></div>
+</div>
+</br>
+	</br>
+  	<img border="0" src="html_css.png"  width="132" height="132"></br>
+<div class="dropdown">
+        <span>
+	<button class="button button3" name="s" value="html">HTML|CSS</button></br>
+	       </span>
+        <div class="dropdown-content"><p>Online HTML|CSS Editor</p></div>
+</div>
+</br>
+	</br>
+  	<img border="0" src="r.png"  width="132" height="132"></br>
+<div class="dropdown">
+        <span>
+	<button class="button button4" name="s" value="r">R</button></br>
+	       </span>
+        <div class="dropdown-content"><p>user:'R' | pass:'R'</p></div>
+</div>
+
+	</center>
+	</form>
+</br>
+</br>
+</br>
+</br>
+</div>
+</body>
+</html>
