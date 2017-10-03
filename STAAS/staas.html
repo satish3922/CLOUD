@@ -1,0 +1,90 @@
+<!DOCTYPE html5>
+<html>
+<head>
+<style>
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	background-image:url(back.jpg);
+	background-width:100%;
+	background-height:20%;
+}
+.button {
+    width:44mm;
+    background-color: #4CAF50; /* Green */
+    border-radius:4px;
+    color: white;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight:bold;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white;
+    color: #4616ad;
+    border: 2px solid #4616ad;
+}
+
+.button1:hover {
+    background-color: #4616ad;
+    color: white;
+    border:2px solid white;
+}
+span{
+	color:red;
+}
+h1{
+	font-size:24px;
+	font-family: Goudy Bookletter 1911, sans-serif;
+	color:white;
+	font-weight:bold;
+}
+h2{
+	font-size:24px;
+	font-family: Goudy Bookletter 1911, sans-serif;
+	color:white;
+	font-weight:bold;
+}
+</style>
+	<link rel="stylesheet" href="styles1.css">
+        <title>Cloud|STAAS</title>
+        <link rel="icon" type="image/png" href="iaas.png">
+</head>
+<body>
+<div style='font-weight:bold; font-size:34px; padding-bottom:1cm; text-align:center; padding-top:1cm; color:white; background-color:#4616ad;'>STORAGE AS A SERVICE</div>
+</br>
+</br>
+</br>
+</br>
+</br>
+<center>
+<div style='background-color:transparent; width:20%;'>
+	<p style='font-size:28px; font-weight:bold; border:8px solid white;  color:white; text-align:center;'>SPACE <span>4</span> FREE</p>
+</div>
+</center>
+</br>
+<center>
+	<div style='background-color:transparent; width:20%; border:8px solid white;'>
+	</br>
+	<form action='/cgi-bin/staas/staas.py' method='POST'></br>
+	<h1>DRIVE NAME</h1>
+	<input name="" placeholder="Enter Drive Name"></br>
+	</br>
+	<h2>DRIVE SIZE</h2>
+	<input name="ds" placeholder="Enter Drive Size (MB)"></br>
+	</br>
+	<button class="button button1" type="submit" >GENERATE</button></br>
+	</form></br>
+	</div>
+</center>
+</body>
+</html>
+
