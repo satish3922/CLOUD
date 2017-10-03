@@ -1,0 +1,162 @@
+<!DOCTYPE html5>
+<html>
+<head>
+		<link rel="stylesheet" href="styles1.css">
+		<title>Cloud|IAAS</title>
+		<link rel="icon" type="image/png" href="iaas.png">
+</head>
+<style>
+*{
+		padding:0px;
+		margin:0px;
+}
+body{
+		background-image: url(back.jpg);
+		background-repeat: no-repeat;
+
+}
+.button {
+    width:52mm;
+    background-color: #4CAF50; /* Green */
+    border-radius:4px;
+    color: white;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight:bold;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1 {
+    background-color: transparent;
+    color:white;
+    border: 6px solid white;
+}
+
+.button1:hover {
+    background-color: #4616ad;
+    color: white;
+    border:2px solid white;
+}
+.button2 {
+    background-color: transparent;
+    color: white;
+    border: 6px solid white;
+}
+
+.button2:hover {
+	background-color: #4616ad;
+	color: white;
+	border:2px solid white;
+}
+.button3 {
+    background-color: transparent;
+    color: white;
+    border: 6px solid white;
+}
+
+.button3:hover {
+	background-color: #4616ad;
+	color: white;
+	border:2px solid white;
+}
+.button4 {
+    background-color: transparent;
+    color: white;
+    border: 6px solid white;
+}
+
+.button4:hover {
+	background-color: #4616ad;
+	color: white;
+	border:2px solid white;
+}
+.button5 {
+    background-color: transparent;
+    color: white;
+    border: 6px solid white;
+}
+
+.button5:hover {
+	background-color: #4616ad;
+	color: white;
+	border:2px solid white;
+}
+.button6 {
+    background-color: transparent;
+    color: white;
+    border: 6px solid white;
+}
+
+.button6:hover {
+	background-color: #4616ad;
+	color: white;
+	border:2px solid white;
+}
+.button7 {
+    background-color: transparent;
+    color: white;
+    border: 6px solid white;
+}
+
+.button7:hover {
+	background-color: #4616ad;
+	color: white;
+	border:2px solid white;
+}
+</style>
+<p style='color:white; text-align:center; padding-bottom:1cm; padding-top:1cm; background-color:#4616ad; font-size:38px;'>
+<b>Infrastructure As A Service</b>
+</p>
+<body></body>
+
+<center>
+			<form action='/cgi-bin/iaas/iaas.py' method='POST'target='_blank'>
+				<div style='background-color:transparent; float:left; margin:50px 0px 0px 350px; width:20%;font-size:28px; font-weight:bold; border:15px solid #4616ad;  color:white; text-align:center;'>
+					</br>
+					<center>
+					<div style='background-color:white; width:49mm;font-size:28px; font-weight:bold; border:6px solid #4616ad;  color:#4616ad; text-align:center;'>
+					<p>RAM SIZE</p>
+					</div>
+				</center>
+					<input type="text" name="ram" maxlength="4"  placeholder="Enter RAM size (MiB)">
+					</br>
+					<center>
+					<div style='background-color:white; width:49mm;font-size:28px; font-weight:bold; border:6px solid #4616ad;  color:#4616ad; text-align:center;'>
+					<p>CPU CORE</p>
+					</div>
+				</center>
+					<input type="text" name="cpu"  maxlength="1" placeholder="Enter CPU Core">
+					</br>
+					<button class="button button1" name="os" value="ubuntu" >UBUNTU</button></br>
+					<button class="button button2" name="os" value="window" >WINDOW</button></br>
+					<button class="button button3" name="os" value="fedora" >FEDORA</button></br>
+					<button class="button button4" name="os" value="kali" >KALI</button></br>
+					</br>
+				</div>
+			</form>
+</center>
+
+<center>
+	<form action='/cgi-bin/cloud/submit.py' method='POST'>
+		<div style='background-color:transparent; float:right; margin:100px 350px 0px 0px; width:20%;font-size:28px; font-weight:bold; border:15px solid #4616ad;  color:white; text-align:center;'>
+			</br>
+			<center>
+			<div style='background-color:white; width:49mm;font-size:28px; font-weight:bold; border:6px solid #4616ad;  color:#4616ad; text-align:center;'>
+			<p>OS NAME</p>
+			</div>
+		</center>
+			<input type="text" name="os"  maxlength="8" placeholder="Enter OS Name eg. ubuntu">
+			</br>
+			<button class="button button5" name="s" value="start" >START</button></br>
+			<button class="button button6" name="s" value="stop" >STOP</button></br>
+			<button class="button button7" name="s" value="remove" >REMOVE</button></br>
+			</br>
+		</div>
+	</form>
+</center>
+
+</html>
